@@ -1,0 +1,19 @@
+login = input("Loginni kiriting: ")
+parol = input("Parolni kiriting: ")
+
+if login == "bank_user" and parol == "Secure@123":
+    print("Tizimga muvaffaqiyatli kirdingiz")
+    balans = int(input("Balansni kiriting: "))
+    pul_yechish = int(input("Qancha pul yechmoqchisiz?"))
+    if balans < pul_yechish:
+        print("Xatolik: hisobingizda yetarli mablag' yo'q")
+    elif (balans - pul_yechish) >= 1000000:
+        print("Tabriklaymiz, siz Premium mijozsiz")
+        valyuta = input("Qaysi valyutada chek olmoqchisiz?")
+        print(valyuta)
+else:
+    maxfiy_kod = input("Maxfiy kodni kiriting: ")
+    if maxfiy_kod == "0000":
+        print("Tiklash tizimiga xush kelibsiz")
+    else:
+        print("404 Error: kirish rad etildi")
