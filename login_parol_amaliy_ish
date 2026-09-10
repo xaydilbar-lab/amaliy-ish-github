@@ -11,6 +11,10 @@ if login == "bank_user" and parol == "Secure@123":
         print("Tabriklaymiz, siz Premium mijozsiz")
         valyuta = input("Qaysi valyutada chek olmoqchisiz?")
         print(valyuta)
+    elif (balans - pul_yechish) > 100000 and (balans - pul_yechish) < 1000000:
+        print("Tranzaksiya muvaffaqiyatli amalga oshirildi")
+    else:
+        print("Diqqat: hisobingizdagi mablag' kam qoldi")
 else:
     maxfiy_kod = input("Maxfiy kodni kiriting: ")
     if maxfiy_kod == "0000":
